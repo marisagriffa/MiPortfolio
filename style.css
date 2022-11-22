@@ -1,0 +1,18 @@
+.col {
+    border: 1px solid black;
+    max-width: 100%;
+}
+
+.row {
+    border: 1px solid green;
+}
+
+.portada{
+    background-image: url("banner1.jpg");
+    background-size: cover;
+
+    width: 300px;
+    height: 300px;
+    border: 2px solid;
+    color: pink;
+}
