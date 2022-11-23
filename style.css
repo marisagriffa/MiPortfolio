@@ -10,9 +10,51 @@
 .portada{
     background-image: url("banner1.jpg");
     background-size: cover;
-
     width: 300px;
     height: 300px;
     border: 2px solid;
-    color: pink;
+    color: orange;
+    overflow: hidden;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
+
+.logo {
+    width: 100px;
+    padding: 5px
+}
+
+.redes {
+    width: 40px;
+}
+
+.login {
+    background-color: grey;
+    padding: 5px;
+}
+
+.col-center{
+    text-align: center;
+}
+
+.col-right {
+    text-align: right;
+}
+
+.presenta {
+    animation-duration: 15s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
