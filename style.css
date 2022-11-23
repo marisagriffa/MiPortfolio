@@ -7,6 +7,13 @@
     border: 1px solid green;
 }
 
+body {
+    background-color: grey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    padding: 0.5px;
+}
+
 .portada{
     background-image: url("banner1.jpg");
     background-size: cover;
@@ -36,15 +43,19 @@
 
 .col-center{
     text-align: center;
+    padding: 5px;
 }
 
 .col-right {
     text-align: right;
+    padding: 5px;
 }
 
 .presenta {
-    animation-duration: 15s;
+    animation-duration: 5s;
     animation-name: slidein;
+    /*overflow: hidden;*/
+    padding: 5px;
   }
   
   @keyframes slidein {
@@ -57,4 +68,32 @@
       margin-left: 0%;
       width: 100%;
     }
+
+
   }
+
+.ball {
+    width: 150px;
+    height: 150px;
+    background-image: url("Yo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    background-color: #FF5722;
+    animation: bounce 0.5s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: 5;
+}
+    
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 200px, 0);
+        /*transform: translateX(200px);*/
+    }
+}
+/* Prefix Support */
+    
